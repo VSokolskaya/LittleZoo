@@ -8,7 +8,7 @@
 #import "Food.h"
 
 
-@interface Rabbit : Grazing<Food>
+@interface Rabbit : Grazing
 
 
 @end

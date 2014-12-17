@@ -47,6 +47,15 @@
 
 }
 
+- (void)testFeed_self{
+
+    D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
+    Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
+
+    BOOL result = [predator feed:self];
+    XCTAssert(result, @"Predators do not eat themselves");
+}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

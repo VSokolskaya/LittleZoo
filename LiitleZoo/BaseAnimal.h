@@ -1,12 +1,12 @@
 //
-// Created by admin on 12/14/14.
+// Created by admin on 12/17/14.
 // Copyright (c) 2014 admin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "Food.h"
 #import "Animal.h"
-#import "BaseAnimal.h"
 
 
-@interface Grazing : BaseAnimal
+@interface BaseAnimal : NSObject <Animal, Food>
 @end

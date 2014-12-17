@@ -12,20 +12,24 @@
 	<dict>
 		<key>547A6B751205F9D32FB4F6C697CA51B1BAB427BF</key>
 		<string>https://github.com/VSokolskaya/firstrepo.git</string>
+		<key>C734582F5FC45B48BF934F12ACA037C8AA64C300</key>
+		<string>https://github.com/VSokolskaya/LittleZoo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>work/Obj_C_projects/LiitleZoo/LiitleZoo.xcodeproj</string>
+	<string>LiitleZoo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>547A6B751205F9D32FB4F6C697CA51B1BAB427BF</key>
 		<string>../../../../..</string>
+		<key>C734582F5FC45B48BF934F12ACA037C8AA64C300</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/VSokolskaya/firstrepo.git</string>
+	<string>https://github.com/VSokolskaya/LittleZoo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>547A6B751205F9D32FB4F6C697CA51B1BAB427BF</string>
+	<string>C734582F5FC45B48BF934F12ACA037C8AA64C300</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>547A6B751205F9D32FB4F6C697CA51B1BAB427BF</string>
 			<key>IDESourceControlWCCName</key>
-			<string>victory</string>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C734582F5FC45B48BF934F12ACA037C8AA64C300</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LiitleZoo</string>
 		</dict>
 	</array>
 </dict>
