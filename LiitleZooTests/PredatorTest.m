@@ -52,8 +52,8 @@
     D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
     Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
 
-    BOOL result = [predator feed:self];
-    XCTAssert(result, @"Predators do not eat themselves");
+    BOOL result = [predator feed:predator];
+    XCTAssert(!result, @"Predators do not eat themselves");
 }
 
 - (void)testPerformanceExample {

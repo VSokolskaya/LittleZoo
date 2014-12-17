@@ -13,13 +13,10 @@
 @synthesize weight = _weight;
 @synthesize size = _size;
 
-- (FoodType)type {
-
-    return FoodType_Meat;
-}
-
-- (BOOL)feed:(id <Food>)food {
-    return NO;
+    - (BOOL)feed:(id <Food>)food {
+    if (food == self)
+        return NO;
+    return YES;
 }
 
 - (BOOL)play:(id)toy {

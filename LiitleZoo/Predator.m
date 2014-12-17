@@ -32,8 +32,10 @@
 
 
 - (BOOL)feed:(id <Food>)food {
-    if (food.type == FoodType_Meat)
-        return YES;
+    if([super feed: food]) {
+        if (food.type == FoodType_Meat)
+            return YES;
+    }
     return NO;
 }
 
