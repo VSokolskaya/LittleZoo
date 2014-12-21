@@ -13,7 +13,22 @@
 @synthesize weight = _weight;
 @synthesize size = _size;
 
-    - (BOOL)feed:(id <Food>)food {
+
+- (instancetype)initWithWeight:(NSNumber *)weight size:(D3Size *)size {
+    self = [super init];
+    if (self) {
+        _weight = weight;
+        _size = size;
+    }
+
+    return self;
+}
+
++ (instancetype)animalWithWeight:(NSNumber *)weight size:(D3Size *)size {
+    return [[self alloc] initWithWeight:weight size:size];
+}
+
+- (BOOL)feed:(id <Food>)food {
     if (food == self)
         return NO;
     return YES;

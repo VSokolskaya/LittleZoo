@@ -10,10 +10,14 @@
 @class D3Size;
 
 
-@interface Predator : BaseAnimal
-- (instancetype)initWithWeight:(NSNumber *)weight size:(D3Size *)size;
+@interface Predator : BaseAnimal <NSCopying>
+- (id)copyWithZone:(NSZone *)zone;
 
-+ (instancetype)predatorWithWeight:(NSNumber *)weight size:(D3Size *)size;
+- (BOOL)isEqual:(id)other;
+
+- (BOOL)isEqualToPredator:(Predator *)predator;
+
+- (NSUInteger)hash;
 
 
 @end

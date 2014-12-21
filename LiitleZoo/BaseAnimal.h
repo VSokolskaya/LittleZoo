@@ -9,4 +9,9 @@
 
 
 @interface BaseAnimal : NSObject <Animal, Food>
+
+- (instancetype)initWithWeight:(NSNumber *)weight size:(D3Size *)size;
+
++ (instancetype)animalWithWeight:(NSNumber *)weight size:(D3Size *)size;
+
 @end

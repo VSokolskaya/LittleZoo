@@ -31,11 +31,11 @@
 
 - (void)testFeed {
     D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
-    Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
+    Predator *predator  = [Predator animalWithWeight:@(100) size:size];
 
     Rabbit *food = [[Rabbit alloc]init];
     food.weight = @(3);
-    food.size = [D3Size sizeWithHeight:@(30) width:@(20) length:@(50)];
+    food.size = [D3Size sizeWithHeight:@(10) width:@(10) length:@(10)];
 
     BOOL result = [predator feed:food];
 
@@ -50,7 +50,7 @@
 - (void)testFeed_self{
 
     D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
-    Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
+    Predator *predator  = [Predator animalWithWeight:@(100) size:size];
 
     BOOL result = [predator feed:predator];
     XCTAssertFalse(result, @"Predators do not eat themselves");
@@ -58,15 +58,28 @@
 
 - (void) testFeed_otherBigAnimal{
 
-    D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
-    Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
+    D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(10) length:@(10)];
+    Predator *predator  = [Predator animalWithWeight:@(100) size:size];
 
-    D3Size *size1 = [[D3Size alloc] initWithHeight:@(15) width:@(50) length:@(120)];
-    Predator *big_animal  = [Predator predatorWithWeight:@(200) size:size1];
+    D3Size *size1 = [[D3Size alloc] initWithHeight:@(25) width:@(10) length:@(10)];
+    Predator *big_animal  = [Predator animalWithWeight:@(200) size:size1];
 
     BOOL result = [predator feed:big_animal];
     XCTAssertFalse (result, @"Predator can't eat someone that big!");
 
+}
+
+- (void) testIntegrity{
+
+    D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
+    Predator *predator1  = [Predator animalWithWeight:@(100) size:size];
+
+    size.height=@(155);
+    Predator *predator2 = [Predator animalWithWeight:@(100) size:size];
+
+    XCTAssertEqualObjects(predator1, predator2, @"Objects are equal, but should not be");
+    NSLog(@"predator1 %@", predator1);
+    NSLog(@"predator1 %@", predator2);
 }
 
 @end
