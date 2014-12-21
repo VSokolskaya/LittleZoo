@@ -32,8 +32,10 @@
 
 
 - (BOOL)feed:(id <Food>)food {
+ float volume1 = [food.size volume].floatValue;
+ float volume2 = 2*([self.size volume].floatValue);
     if([super feed: food]) {
-        if (food.type == FoodType_Meat)
+        if ((food.type == FoodType_Meat)&&(volume1<=volume2))
             return YES;
     }
     return NO;

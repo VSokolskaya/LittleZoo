@@ -11,7 +11,7 @@
 typedef NS_ENUM(int, FoodType){
     FoodType_Grass,
     FoodType_Meat,
-    FoodType_Other
+    FoodType_Other,
 };
 
 @property (nonatomic, readonly) FoodType type;

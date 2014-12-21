@@ -56,11 +56,17 @@
     XCTAssert(!result, @"Predators do not eat themselves");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void) testFeed_otherBigAnimal{
+
+    D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
+    Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
+
+    D3Size *size1 = [[D3Size alloc] initWithHeight:@(15) width:@(50) length:@(120)];
+    Predator *big_animal  = [Predator predatorWithWeight:@(200) size:size1];
+
+    BOOL result = [predator feed:big_animal];
+    XCTAssert(!result, @"Predator can't eat someone that big!");
+
 }
 
 @end
