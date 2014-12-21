@@ -7,10 +7,12 @@
 #import "Food.h"
 #import "Animal.h"
 
+@class D3Size;
+
 
 @interface BaseAnimal : NSObject <Animal, Food>
 
-- (instancetype)initWithWeight:(NSNumber *)weight size:(D3Size *)size;
+- (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight;
 
 + (instancetype)animalWithWeight:(NSNumber *)weight size:(D3Size *)size;
 

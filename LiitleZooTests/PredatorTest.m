@@ -74,10 +74,13 @@
     D3Size *size = [[D3Size alloc] initWithHeight:@(10) width:@(27) length:@(89)];
     Predator *predator1  = [Predator animalWithWeight:@(100) size:size];
 
-    size.height=@(155);
     Predator *predator2 = [Predator animalWithWeight:@(100) size:size];
 
-    XCTAssertEqualObjects(predator1, predator2, @"Objects are equal, but should not be");
+    predator1.size = size;
+    size.height=@(155);
+    predator2.size = size;
+
+    XCTAssertNotEqualObjects(predator1.size, predator2.size, @"Objects are equal, but should not be");
     NSLog(@"predator1 %@", predator1);
     NSLog(@"predator1 %@", predator2);
 }
