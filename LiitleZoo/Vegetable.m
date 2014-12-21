@@ -9,6 +9,10 @@
 @implementation Vegetable {
 
 }
+@synthesize size = _size;
+
+@synthesize weight = _weight;
+
 - (FoodType)type {
     return FoodType_Grass;
 }

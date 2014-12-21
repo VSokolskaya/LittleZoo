@@ -53,7 +53,7 @@
     Predator *predator  = [Predator predatorWithWeight:@(100) size:size];
 
     BOOL result = [predator feed:predator];
-    XCTAssert(!result, @"Predators do not eat themselves");
+    XCTAssertFalse(result, @"Predators do not eat themselves");
 }
 
 - (void) testFeed_otherBigAnimal{
@@ -65,7 +65,7 @@
     Predator *big_animal  = [Predator predatorWithWeight:@(200) size:size1];
 
     BOOL result = [predator feed:big_animal];
-    XCTAssert(!result, @"Predator can't eat someone that big!");
+    XCTAssertFalse (result, @"Predator can't eat someone that big!");
 
 }
 
