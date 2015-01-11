@@ -19,6 +19,7 @@
 		5860388945BFBE8AD657ED1B /* Vegetable.m in Sources */ = {isa = PBXBuildFile; fileRef = 586034B3AB1A1B39C24B19B7 /* Vegetable.m */; };
 		58603C18BDE3B91344F10F89 /* Predator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603EBB6B837B3EE7041DF5 /* Predator.m */; };
 		58603FA9B81CFF2FB365A8F4 /* Cage.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603E1D65E688A323787A14 /* Cage.m */; };
+		8439A2321A6270D600048B8E /* StringPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439A2311A6270D600048B8E /* StringPlayTests.m */; };
 		84D9D3801A3D898D002BA719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9D37F1A3D898D002BA719 /* main.m */; };
 		84D9D3831A3D898D002BA719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9D3821A3D898D002BA719 /* AppDelegate.m */; };
 		84D9D3861A3D898D002BA719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9D3851A3D898D002BA719 /* ViewController.m */; };
@@ -57,6 +58,7 @@
 		58603D3C18FBB8C713228C39 /* Grazing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grazing.m; sourceTree = "<group>"; };
 		58603E1D65E688A323787A14 /* Cage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cage.m; sourceTree = "<group>"; };
 		58603EBB6B837B3EE7041DF5 /* Predator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Predator.m; sourceTree = "<group>"; };
+		8439A2311A6270D600048B8E /* StringPlayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringPlayTests.m; sourceTree = "<group>"; };
 		84D9D37A1A3D898D002BA719 /* LiitleZoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiitleZoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9D37E1A3D898D002BA719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D9D37F1A3D898D002BA719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				84D9D3971A3D898D002BA719 /* Supporting Files */,
 				84D9D3A91A3DA056002BA719 /* PredatorTest.m */,
 				84D9D3AB1A46DAF1002BA719 /* CageTests.m */,
+				8439A2311A6270D600048B8E /* StringPlayTests.m */,
 			);
 			path = LiitleZooTests;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8439A2321A6270D600048B8E /* StringPlayTests.m in Sources */,
 				84D9D39A1A3D898D002BA719 /* LiitleZooTests.m in Sources */,
 				84D9D3AA1A3DA056002BA719 /* PredatorTest.m in Sources */,
 				58603C18BDE3B91344F10F89 /* Predator.m in Sources */,
